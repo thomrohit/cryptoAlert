@@ -1,0 +1,8 @@
+
+CREATE TABLE price (
+	Time 	TIMESTAMP,
+    Price   DECIMAL(10,2) NOT NULL,
+    Coin 	VARCHAR(255)
+);
+
+INSERT INTO price VALUES (CURRENT_TIME(), 101.47, "btc"), (CURRENT_TIME(), 80.00, "btc");
